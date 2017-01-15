@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ParticleSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

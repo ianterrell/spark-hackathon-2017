@@ -12,6 +12,10 @@
 		D912613F1E2B11DF0051CC32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D912613D1E2B11DF0051CC32 /* Main.storyboard */; };
 		D91261411E2B11DF0051CC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91261401E2B11DF0051CC32 /* Assets.xcassets */; };
 		D91261441E2B11DF0051CC32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91261421E2B11DF0051CC32 /* LaunchScreen.storyboard */; };
+		D91261591E2B14E90051CC32 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261551E2B14E90051CC32 /* AFNetworking.framework */; };
+		D912615A1E2B14E90051CC32 /* OnePasswordExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261561E2B14E90051CC32 /* OnePasswordExtension.framework */; };
+		D912615B1E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261571E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework */; };
+		D912615C1E2B14E90051CC32 /* ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261581E2B14E90051CC32 /* ParticleSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		D91261401E2B11DF0051CC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D91261431E2B11DF0051CC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D91261451E2B11DF0051CC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91261551E2B14E90051CC32 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		D91261561E2B14E90051CC32 /* OnePasswordExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OnePasswordExtension.framework; path = Carthage/Build/iOS/OnePasswordExtension.framework; sourceTree = "<group>"; };
+		D91261571E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleDeviceSetupLibrary.framework; path = Carthage/Build/iOS/ParticleDeviceSetupLibrary.framework; sourceTree = "<group>"; };
+		D91261581E2B14E90051CC32 /* ParticleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleSDK.framework; path = Carthage/Build/iOS/ParticleSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D912615B1E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework in Frameworks */,
+				D912615A1E2B14E90051CC32 /* OnePasswordExtension.framework in Frameworks */,
+				D91261591E2B14E90051CC32 /* AFNetworking.framework in Frameworks */,
+				D912615C1E2B14E90051CC32 /* ParticleSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				D91261381E2B11DF0051CC32 /* RGB */,
+				D91261531E2B12F70051CC32 /* Carthage */,
 				D91261371E2B11DF0051CC32 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +77,17 @@
 			path = RGB;
 			sourceTree = "<group>";
 		};
+		D91261531E2B12F70051CC32 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				D91261551E2B14E90051CC32 /* AFNetworking.framework */,
+				D91261561E2B14E90051CC32 /* OnePasswordExtension.framework */,
+				D91261571E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework */,
+				D91261581E2B14E90051CC32 /* ParticleSDK.framework */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +98,7 @@
 				D91261321E2B11DF0051CC32 /* Sources */,
 				D91261331E2B11DF0051CC32 /* Frameworks */,
 				D91261341E2B11DF0051CC32 /* Resources */,
+				D91261541E2B13F90051CC32 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +156,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D91261541E2B13F90051CC32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OnePasswordExtension.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ParticleDeviceSetupLibrary.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ParticleSDK.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D91261321E2B11DF0051CC32 /* Sources */ = {
@@ -260,6 +305,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7UMFPW78PV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RGB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spark.RGB;
@@ -273,6 +322,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7UMFPW78PV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RGB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spark.RGB;
