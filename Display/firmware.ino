@@ -53,6 +53,7 @@ int clearDisplay(String unused)
 {
   display.clearDisplay();
   display.setCursor(0,0);
+  display.display();
   return 1;
 }
 
