@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Make sure your Photon is flashed with the application in `firmware.particle`.
+Make sure your Photon is flashed with the application in `firmware.ino`.
 
 1. Clone this repo
 1. From this app's directory, build the dependencies with `carthage build`
