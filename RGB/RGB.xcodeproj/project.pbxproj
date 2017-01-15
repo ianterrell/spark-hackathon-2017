@@ -16,6 +16,9 @@
 		D912615A1E2B14E90051CC32 /* OnePasswordExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261561E2B14E90051CC32 /* OnePasswordExtension.framework */; };
 		D912615B1E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261571E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework */; };
 		D912615C1E2B14E90051CC32 /* ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261581E2B14E90051CC32 /* ParticleSDK.framework */; };
+		D912615E1E2B1A770051CC32 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D912615D1E2B1A770051CC32 /* Config.plist */; };
+		D91261601E2B1AD00051CC32 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912615F1E2B1AD00051CC32 /* Config.swift */; };
+		D91261621E2B228B0051CC32 /* Debounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91261611E2B228B0051CC32 /* Debounce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		D91261561E2B14E90051CC32 /* OnePasswordExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OnePasswordExtension.framework; path = Carthage/Build/iOS/OnePasswordExtension.framework; sourceTree = "<group>"; };
 		D91261571E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleDeviceSetupLibrary.framework; path = Carthage/Build/iOS/ParticleDeviceSetupLibrary.framework; sourceTree = "<group>"; };
 		D91261581E2B14E90051CC32 /* ParticleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleSDK.framework; path = Carthage/Build/iOS/ParticleSDK.framework; sourceTree = "<group>"; };
+		D912615D1E2B1A770051CC32 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		D912615F1E2B1AD00051CC32 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D91261611E2B228B0051CC32 /* Debounce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debounce.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 				D91261401E2B11DF0051CC32 /* Assets.xcassets */,
 				D91261421E2B11DF0051CC32 /* LaunchScreen.storyboard */,
 				D91261451E2B11DF0051CC32 /* Info.plist */,
+				D912615D1E2B1A770051CC32 /* Config.plist */,
+				D912615F1E2B1AD00051CC32 /* Config.swift */,
+				D91261611E2B228B0051CC32 /* Debounce.swift */,
 			);
 			path = RGB;
 			sourceTree = "<group>";
@@ -149,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D912615E1E2B1A770051CC32 /* Config.plist in Resources */,
 				D91261441E2B11DF0051CC32 /* LaunchScreen.storyboard in Resources */,
 				D91261411E2B11DF0051CC32 /* Assets.xcassets in Resources */,
 				D912613F1E2B11DF0051CC32 /* Main.storyboard in Resources */,
@@ -184,6 +194,8 @@
 			files = (
 				D912613C1E2B11DF0051CC32 /* ViewController.swift in Sources */,
 				D912613A1E2B11DF0051CC32 /* AppDelegate.swift in Sources */,
+				D91261621E2B228B0051CC32 /* Debounce.swift in Sources */,
+				D91261601E2B1AD00051CC32 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
