@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D912613A1E2B11DF0051CC32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91261391E2B11DF0051CC32 /* AppDelegate.swift */; };
+		D912613C1E2B11DF0051CC32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912613B1E2B11DF0051CC32 /* ViewController.swift */; };
+		D912613F1E2B11DF0051CC32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D912613D1E2B11DF0051CC32 /* Main.storyboard */; };
+		D91261411E2B11DF0051CC32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91261401E2B11DF0051CC32 /* Assets.xcassets */; };
+		D91261441E2B11DF0051CC32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91261421E2B11DF0051CC32 /* LaunchScreen.storyboard */; };
+		D91261591E2B14E90051CC32 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261551E2B14E90051CC32 /* AFNetworking.framework */; };
+		D912615A1E2B14E90051CC32 /* OnePasswordExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261561E2B14E90051CC32 /* OnePasswordExtension.framework */; };
+		D912615B1E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261571E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework */; };
+		D912615C1E2B14E90051CC32 /* ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D91261581E2B14E90051CC32 /* ParticleSDK.framework */; };
+		D912615E1E2B1A770051CC32 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D912615D1E2B1A770051CC32 /* Config.plist */; };
+		D91261601E2B1AD00051CC32 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912615F1E2B1AD00051CC32 /* Config.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D91261361E2B11DF0051CC32 /* Display.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Display.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91261391E2B11DF0051CC32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D912613B1E2B11DF0051CC32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D912613E1E2B11DF0051CC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D91261401E2B11DF0051CC32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D91261431E2B11DF0051CC32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D91261451E2B11DF0051CC32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91261551E2B14E90051CC32 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		D91261561E2B14E90051CC32 /* OnePasswordExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OnePasswordExtension.framework; path = Carthage/Build/iOS/OnePasswordExtension.framework; sourceTree = "<group>"; };
+		D91261571E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleDeviceSetupLibrary.framework; path = Carthage/Build/iOS/ParticleDeviceSetupLibrary.framework; sourceTree = "<group>"; };
+		D91261581E2B14E90051CC32 /* ParticleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParticleSDK.framework; path = Carthage/Build/iOS/ParticleSDK.framework; sourceTree = "<group>"; };
+		D912615D1E2B1A770051CC32 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		D912615F1E2B1AD00051CC32 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D91261331E2B11DF0051CC32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D912615B1E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework in Frameworks */,
+				D912615A1E2B14E90051CC32 /* OnePasswordExtension.framework in Frameworks */,
+				D91261591E2B14E90051CC32 /* AFNetworking.framework in Frameworks */,
+				D912615C1E2B14E90051CC32 /* ParticleSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D912612D1E2B11DF0051CC32 = {
+			isa = PBXGroup;
+			children = (
+				D91261381E2B11DF0051CC32 /* Display */,
+				D91261531E2B12F70051CC32 /* Carthage */,
+				D91261371E2B11DF0051CC32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D91261371E2B11DF0051CC32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D91261361E2B11DF0051CC32 /* Display.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D91261381E2B11DF0051CC32 /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				D91261391E2B11DF0051CC32 /* AppDelegate.swift */,
+				D912613B1E2B11DF0051CC32 /* ViewController.swift */,
+				D912613D1E2B11DF0051CC32 /* Main.storyboard */,
+				D91261401E2B11DF0051CC32 /* Assets.xcassets */,
+				D91261421E2B11DF0051CC32 /* LaunchScreen.storyboard */,
+				D91261451E2B11DF0051CC32 /* Info.plist */,
+				D912615D1E2B1A770051CC32 /* Config.plist */,
+				D912615F1E2B1AD00051CC32 /* Config.swift */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		D91261531E2B12F70051CC32 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				D91261551E2B14E90051CC32 /* AFNetworking.framework */,
+				D91261561E2B14E90051CC32 /* OnePasswordExtension.framework */,
+				D91261571E2B14E90051CC32 /* ParticleDeviceSetupLibrary.framework */,
+				D91261581E2B14E90051CC32 /* ParticleSDK.framework */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D91261351E2B11DF0051CC32 /* Display */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D91261481E2B11DF0051CC32 /* Build configuration list for PBXNativeTarget "Display" */;
+			buildPhases = (
+				D91261321E2B11DF0051CC32 /* Sources */,
+				D91261331E2B11DF0051CC32 /* Frameworks */,
+				D91261341E2B11DF0051CC32 /* Resources */,
+				D91261541E2B13F90051CC32 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Display;
+			productName = Display;
+			productReference = D91261361E2B11DF0051CC32 /* Display.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D912612E1E2B11DF0051CC32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "SPARK Hackathon";
+				TargetAttributes = {
+					D91261351E2B11DF0051CC32 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7UMFPW78PV;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D91261311E2B11DF0051CC32 /* Build configuration list for PBXProject "Display" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D912612D1E2B11DF0051CC32;
+			productRefGroup = D91261371E2B11DF0051CC32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D91261351E2B11DF0051CC32 /* Display */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D91261341E2B11DF0051CC32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D912615E1E2B1A770051CC32 /* Config.plist in Resources */,
+				D91261441E2B11DF0051CC32 /* LaunchScreen.storyboard in Resources */,
+				D91261411E2B11DF0051CC32 /* Assets.xcassets in Resources */,
+				D912613F1E2B11DF0051CC32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D91261541E2B13F90051CC32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AFNetworking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OnePasswordExtension.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ParticleDeviceSetupLibrary.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ParticleSDK.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D91261321E2B11DF0051CC32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D912613C1E2B11DF0051CC32 /* ViewController.swift in Sources */,
+				D912613A1E2B11DF0051CC32 /* AppDelegate.swift in Sources */,
+				D91261601E2B1AD00051CC32 /* Config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D912613D1E2B11DF0051CC32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D912613E1E2B11DF0051CC32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D91261421E2B11DF0051CC32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D91261431E2B11DF0051CC32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D91261461E2B11DF0051CC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D91261471E2B11DF0051CC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D91261491E2B11DF0051CC32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7UMFPW78PV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Display/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spark.Display;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D912614A1E2B11DF0051CC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7UMFPW78PV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Display/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.spark.Display;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D91261311E2B11DF0051CC32 /* Build configuration list for PBXProject "Display" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D91261461E2B11DF0051CC32 /* Debug */,
+				D91261471E2B11DF0051CC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D91261481E2B11DF0051CC32 /* Build configuration list for PBXNativeTarget "Display" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D91261491E2B11DF0051CC32 /* Debug */,
+				D912614A1E2B11DF0051CC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D912612E1E2B11DF0051CC32 /* Project object */;
+}
