@@ -1,4 +1,4 @@
-# RGB LED App
+# OLED Display App
 
 ## Getting Started
 
