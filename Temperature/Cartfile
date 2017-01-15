@@ -1,0 +1,2 @@
+github "spark/spark-setup-ios" ~> 0.6
+github "danielgindi/Charts" ~> 3.0
